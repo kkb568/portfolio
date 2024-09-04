@@ -4,7 +4,8 @@ import { ProjectData } from "./ProjectData";
 
 export default function Projects() {
   const projectsData = projects.map((project) => {
-    const { id, imageUrl, name } = project;
+    const id = projects.indexOf(project);
+    const { imageUrl, name } = project;
 
     return <ProjectData key={id} imageUrl={imageUrl} name={name} id={id} />;
   });

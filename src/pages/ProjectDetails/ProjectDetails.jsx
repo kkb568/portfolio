@@ -15,7 +15,7 @@ export default function ProjectDetails() {
   const { name, imageUrl, details, siteUrl } = projectObject;
 
   useEffect(() => {
-    const filteredProject = projects.filter((project) => project.id === parseInt(id));
+    const filteredProject = projects.filter((project) => projects.indexOf(project) === parseInt(id));
     const { name, imageUrl, details, siteUrl } = filteredProject[0];
 
     setProjectObject((prevState) => {

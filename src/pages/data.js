@@ -18,7 +18,6 @@ export const contacts = [
 
 export const projects = [
   {
-    id: 1,
     name: "Virtual relaxation room",
     siteUrl: "https://virtualrelaxationroom-aluwellness-alueducation.com/",
     imageUrl: relaxation_room,
@@ -26,7 +25,6 @@ export const projects = [
       "It's a website in which the African Leadership College students can engage with video and article resources based on how they are currently feeling. This helps the students to assist their emotional wellbeing and get help from the team of wellness and peer counsellors. It's created using HTML, CSS and Javascript language.",
   },
   {
-    id: 2,
     name: "Map locate application",
     siteUrl: "https://map-locate.onrender.com/signup",
     imageUrl: map_locate,
