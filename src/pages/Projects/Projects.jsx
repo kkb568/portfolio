@@ -1,33 +1,18 @@
-import './Projects.scss'
-import { projects } from '../data'
-import { Link } from 'react-router-dom'
+import "./Projects.scss";
+import { projects } from "../data";
+import { ProjectData } from "./ProjectData";
 
 export default function Projects() {
-    const projectsData = projects.map((project) => {
-        return (
-            <ProjectData key={project.id}
-                imageUrl={project.imageUrl}
-                name={project.name}
-                id={project.id}/>
-        )
-    })
+  const projectsData = projects.map((project) => {
+    const { id, imageUrl, name } = project;
 
-    return (
-        <>
-            <h3>Projects</h3>
-            <div className='projects'>
-                {projectsData}
-            </div>
-        </>
-    )
-}
+    return <ProjectData key={id} imageUrl={imageUrl} name={name} id={id} />;
+  });
 
-function ProjectData(props) {
-    return (
-        <div className='project'>
-            <img src={props.imageUrl} alt={`${props.name} image`}/>
-            <p>{props.name}</p>
-            <Link to={`/projects/${props.id}`}>View more</Link>
-        </div>
-    )
+  return (
+    <>
+      <h1>Projects</h1>
+      <div className="projects">{projectsData}</div>
+    </>
+  );
 }
