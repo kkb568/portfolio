@@ -5,9 +5,9 @@ import { ContactDetails } from "./ContactDetails";
 export default function Contact() {
   const contactDetails = contacts.map((contact) => {
     const id = contacts.indexOf(contact);
-    const { imageUrl, name } = contact;
+    const { imageUrl, imageName, name } = contact;
 
-    return <ContactDetails key={id} url={imageUrl} name={name} />;
+    return <ContactDetails key={id} imageName={imageName} url={imageUrl} name={name} />;
   });
 
   return (

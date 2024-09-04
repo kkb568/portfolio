@@ -7,8 +7,8 @@ export default function Home() {
       <div className="content">
         <h1>Hello and welcome</h1>
         <p>
-          Who am I? A young man passionate and knowledgeable in UX design, front and back-end development. Click on the about link to know
-          who exactly am I.
+          Who am I? A young man passionate and knowledgeable in UX design and front-end development. Click on the about link to know who
+          exactly am I.
         </p>
       </div>
     </div>

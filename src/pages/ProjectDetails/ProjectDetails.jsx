@@ -15,31 +15,25 @@ export default function ProjectDetails() {
   const { name, imageUrl, details, siteUrl } = projectObject;
 
   useEffect(() => {
-    projects
-      .filter((project) => project.id === parseInt(id))
-      .map((filteredProject) => {
-        const { name, imageUrl, details, siteUrl } = filteredProject;
+    const filteredProject = projects.filter((project) => project.id === parseInt(id));
+    const { name, imageUrl, details, siteUrl } = filteredProject[0];
 
-        setProjectObject((prevState) => {
-          return {
-            ...prevState,
-            name,
-            imageUrl,
-            details,
-            siteUrl,
-          };
-        });
-      });
+    setProjectObject((prevState) => {
+      return { ...prevState, name, imageUrl, details, siteUrl };
+    });
   }, [id]);
 
   return (
     <div className="projectDetails">
-      <img src={imageUrl} />
+      <img src={imageUrl} alt={`${name} outline`} />
       <div className="details">
-        <h3>{name}</h3>
+        <h1>{name}</h1>
         <p>{details}</p>
         <p>
-          You can check the project site <a href={siteUrl}>here</a>
+          You can{" "}
+          <a href={siteUrl} target="_blank" rel="noreferrer">
+            check the project site here
+          </a>
         </p>
       </div>
     </div>

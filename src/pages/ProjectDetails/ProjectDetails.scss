@@ -1,3 +1,5 @@
+@use "../../index.scss" as main;
+
 .projectDetails {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -12,6 +14,13 @@
   .details {
     display: block;
     padding: 1em;
+
+    h1 {
+      color: main.$yellow;
+      font-size: 2em;
+      text-align: center;
+      text-transform: uppercase;
+    }
 
     p,
     a {

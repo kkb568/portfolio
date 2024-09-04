@@ -6,10 +6,12 @@ import map_locate from "../images/map_locate.png";
 export const contacts = [
   {
     imageUrl: email,
+    imageName: "Gmail logo",
     name: "briankoome56@gmail.com",
   },
   {
     imageUrl: linkedin,
+    imageName: "LinkedIn logo",
     name: "Brian Koome",
   },
 ];
