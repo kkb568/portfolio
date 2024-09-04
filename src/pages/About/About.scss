@@ -1,27 +1,27 @@
-@use '../../index.scss' as main;
+@use "../../index.scss" as main;
 
 .about-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
-    img {
-        margin-left: 2em;
-        margin-top: 8em;
-        border-radius: 50%;
-    }
+  img {
+    margin-left: 2em;
+    margin-top: 8em;
+    border-radius: 50%;
+  }
 }
 
 .about {
-    padding-right: .5em;
+  padding-right: 0.5em;
 
-    h2 {
-        color: main.$yellow;
-        text-transform: uppercase;
-        font-size: 2.5em;
-    }
+  h1 {
+    color: main.$yellow;
+    text-transform: uppercase;
+    font-size: 2.5em;
+  }
 
-    p {
-        color: white;
-        font-size: 1.2em;
-    }
+  p {
+    color: white;
+    font-size: 1.2em;
+  }
 }
