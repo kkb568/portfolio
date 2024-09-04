@@ -1,29 +1,20 @@
-import './Contact.scss'
-import { contacts } from '../data' 
+import "./Contact.scss";
+import { contacts } from "../data";
+import { ContactDetails } from "./ContactDetails";
 
 export default function Contact() {
-    const details = contacts.map((contact) => {
-        return (
-            <Details key={contact.id}
-                url={contact.imageUrl}
-                name={contact.name}/>
-        )
-    })
+  const contactDetails = contacts.map((contact) => {
+    const id = contacts.indexOf(contact);
+    const { imageUrl, name } = contact;
 
-    return (
-        <div className='contact-details'>
-            <h2>Contact</h2>
-            <p>You can contact me through the following details: </p>
-            {details}
-        </div>
-    )
-}
+    return <ContactDetails key={id} url={imageUrl} name={name} />;
+  });
 
-function Details(props) {
-    return (
-        <div className='details'>
-            <img src={props.url}/>
-            <p>{props.name}</p>
-        </div>
-    )
+  return (
+    <div className="contact-details">
+      <h2>Contact</h2>
+      <p>You can contact me through the following details: </p>
+      {contactDetails}
+    </div>
+  );
 }
