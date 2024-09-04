@@ -31,6 +31,6 @@ export const projects = [
     siteUrl: "https://map-locate.onrender.com/signup",
     imageUrl: map_locate,
     details:
-      "This application is used to connect African Leadership University students, staff and alumni through us of Google maps and pins to show the user's location. As the user clicks one of the pins (showing other users), it takes to a form page whereby the user sends a message to the recepient and is sent to the recepient's email. The app is created using HTML, SCSS, Javascript and Nodejs with MongoDB database.",
+      "This application is used to connect African Leadership University students, staff and alumni through us of Google maps and pins to show the user's location. As the user clicks one of the pins (showing other users), it takes to a form page whereby the user sends a message to the recipient and is sent to the recepient's email. The app is created using HTML, SCSS, Mustache and Javascript for frontend, Google OAuth services and Nodejs with MongoDB database for backend.",
   },
 ];
