@@ -41,8 +41,12 @@ header {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   header {
-    gap: 50%;
+    display: block;
+
+    nav {
+      margin-top: 1em;
+    }
   }
 }
