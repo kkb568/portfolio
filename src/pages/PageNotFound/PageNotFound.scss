@@ -1,3 +1,5 @@
+@use "../../index.scss" as main;
+
 .pageNotFound {
   text-align: center;
 
@@ -8,5 +10,20 @@
   p {
     color: white;
     font-size: 2em;
+  }
+
+  a {
+    text-decoration: none;
+    background-color: main.$yellow;
+    color: black;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    transition: all 0.1s ease;
+    font-size: 1.2em;
+  }
+
+  a:hover {
+    padding: 0.65em;
+    font-size: 1.3em;
   }
 }
